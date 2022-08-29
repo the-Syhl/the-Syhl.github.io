@@ -43,6 +43,25 @@ canvas { width: 100%; height: 100% }
     margin: 2em auto;
 }
 
+.icon{
+    float: left;
+    padding-right: 0.3em;
+}
+li{
+    list-style: none;
+}
+li.no-bullet::before{
+    content: none;
+}
+ul li::before {
+    list-style: none;
+    content: "»";
+    color: #9b9b9b;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 
 .left-column{
     float: left;
